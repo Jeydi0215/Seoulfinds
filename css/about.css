@@ -1,0 +1,203 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background: #fdd0d0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: bold;
+  font-family: Impact;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+span {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+
+header {
+  background-color: #f77070;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #FAA0A0;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: black;
+  color: yellow;
+}
+
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+
+.owner {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+
+}
+
+.owner img {
+  width: 300px;
+  border: 1px solid black;
+}
+
+
+footer {
+bottom: 0;
+width: 100%;
+height: 100px;
+
+}
+
+
+.footer-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 70px;
+padding: 20px;
+background-color: gray;
+margin-bottom: -20px;
+}
+
+
+.footer-top-left {
+flex: 1;
+}
+
+
+.footer-top-right {
+flex: 1;
+text-align: right;
+}
+
+.footer-top-right ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.footer-top-right ul li {
+display: inline-block;
+margin-left: 20px;
+}
+
+.footer-top-right ul li:first-child {
+margin-left: 0;
+}
+
+.footer-top-right ul li a {
+color: #666;
+text-decoration: none;
+}
+
+.footer-top-right ul li a:hover {
+text-decoration: underline;
+color: red;
+}
+
+.footer-bottom {
+height: 30px;
+line-height: 30px;
+text-align: center;
+background-color: #333;
+color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 24px;
+    padding: 20px;
+  }
+  
+  nav {
+    font-size: 18px;
+    padding: 20px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px 0;
+  }
+  
+  .owner {
+    position: relative;
+    overflow: visible;
+  }
+  
+  .owner img {
+    max-width: 100%;
+    position: static;
+    float: none;
+    margin-bottom: 20px;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
+  
+  p {
+    text-align: justify;
+    font-size: 16px;
+  }
+  
+  .owner img {
+    margin-left: 25px;
+  }
+}
